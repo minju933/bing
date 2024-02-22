@@ -6,49 +6,28 @@ html, body {
     box-sizing: border-box;
 }
 .wrap{
+    position: relative;
+    clear: both;
     width: 100%;
-    height: 80px;
-    overflow: hidden;
-    transition: all 2s;
-}
-.header{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    height: 80px;
-    line-height: 80px;
+    margin: 0 auto;
 }
 .logo{
-    line-height: 100px;
-    padding-left: 30px;
+    margin-top: 15px;
+    width: 200px;
 }
-.menu_bar{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-   
-}
-.wrap:hover {
-    height:450px;
-}
-.header_right{
+.header{
+    position: relative;
     display: flex;
-    
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px;
 }
-.box{
-    display: grid;
-    grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 350px;
-    background-color: rgba(255, 255, 255, 0.2);
-    
-}
-.sub_menu_01 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-}
-.sub_menu_01 >div>div{
-    height: 35px;
+.sub_menu_all{
+    position: absolute;
+    left: 530px;
+    width: 920px;
+    height: 350px;
+    background-color: rgb(163, 163, 221);   
 }
 .back_img{
     width: 100%;
@@ -60,3 +39,55 @@ html, body {
     display: block;
     padding-top: 50px;
 }
+.menu_bar{
+    display: flex;
+    align-items: center;
+    line-height: 70px;
+}
+#menu_up{
+    position: relative;
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+.header_right {
+    width: 150px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    
+}
+.header_right > div {
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}
+#menu_down{
+    position: relative;
+    clear: both;
+    width: 150px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+}
+.sub_menu_01{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 200px;
+}
+
+.header_row_all{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 0px;
+    
+    z-index: 2;
+}
+

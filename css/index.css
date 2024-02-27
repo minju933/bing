@@ -1,4 +1,4 @@
-1body,html{
+body,html{
     padding: 0;
     margin: 0;
 }
@@ -62,7 +62,6 @@
     display: flex;
     line-height: 40px;
 }
-.submenu_all {
- 
-}
+
+
 

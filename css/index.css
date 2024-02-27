@@ -11,12 +11,13 @@ body,html{
     list-style: none;
 }
 
-.main{
-    border: 1px solid saddlebrown;
-    width:100%;
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    height: 1033px;
+header{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    transition: all 500ms;
 }
 .header{
     display: flex;
@@ -25,7 +26,6 @@ body,html{
     border: 1px solid rgb(0, 0, 0);
     height: 120px;
     align-items: center;
-
 }
 .header_menu {
     display: grid;
@@ -34,17 +34,21 @@ body,html{
 .submenu_all{
     grid-template-columns: repeat(6, 300px);
     width:100%;
-    height: 450px;
-    background-color: rgb(196, 196, 223);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    line-height: 40px;
+    transition: all 500ms;
+    opacity: 0;
 }
-
 .header > div > a{
  margin: 40px;
- 
 }
+
 .menu_right{
     display: flex;
 }
+
 .lang > a{
     font-size: 15pt;
     font-weight: 600;
@@ -54,14 +58,25 @@ body,html{
     vertical-align:middle;
     margin-right: 10px;
 }
+
 .hamburger > span{
     font-size: 2rem;
     color:  rgb(59, 59, 59);
 }
-.submenu_all{
-    display: flex;
-    line-height: 40px;
+.submenu_all >ul{
+    margin: 22px;
+    
+    
 }
+
+/*main 01 start*/
+.main_01 {
+    width:100%;
+    height: 1200px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+}
+
 
 
 

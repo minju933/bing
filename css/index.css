@@ -58,15 +58,12 @@ header{
     vertical-align:middle;
     margin-right: 10px;
 }
-
 .hamburger > span{
     font-size: 2rem;
     color:  rgb(59, 59, 59);
 }
 .submenu_all >ul{
     margin: 22px;
-    
-    
 }
 
 /*main 01 start*/
